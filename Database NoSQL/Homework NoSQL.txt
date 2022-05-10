@@ -1,0 +1,32 @@
+Dalam collection sample_training.zips tambahkan field boolean "capital" untuk semua dokumen yang berkaitan dengan ALBANY, dan NEW YORK.
+Untuk semua dokumen ALBANY, Value dari tiap Field harus true dan untuk semua dokumen NEW YORK, Value dari tiap Field harus false
+
+1. mongosh "mongodb+srv://cluster0.wjeni.mongodb.net/" --apiVersion 1 -u=user1 -p=user1
+2. use sample_training
+3. show collections
+4. db.zips.find({"city": "NEW YORK"}).count()
+5. db.zips.find({"city": "ALBANY"}).count()
+6. db.zips.updateMany({ "city": "ALBANY" }, { "$set": { "capital": true } })
+7. db.zips.findOne({"city": "ALBANY"})
+{
+    _id: ObjectId("5c8eccc1caa187d17ca6f722"),
+    city: 'ALBANY',
+    zip: '94706',
+    loc: { y: 37.890045, x: 122.295394 },
+    pop: 17333,
+    state: 'CA',
+    capital: true
+  }
+8. db.zips.updateMany({ "city": "NEW YORK" }, { "$set": { "capital": false } })
+9. db.zips.findOne({"city": "NEW YORK"})
+
+{
+  _id: ObjectId("5c8eccc1caa187d17ca72f8b"),
+  city: 'NEW YORK',
+  zip: '10003',
+  loc: { y: 40.731253, x: 73.989223 },
+  pop: 51224,
+  state: 'NY',
+  'capital?': false,
+  capital: false
+}
