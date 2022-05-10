@@ -1,0 +1,12 @@
+Buat class ‘Karyawan’ yang memiliki class attributes 'nama_kantor' dan instance attributes 'nama'
+(public),  'umur' (protected) dan ‘nomor_hp’ (private).
+Dalam class ‘Karyawan’ memiliki method ‘nomor_hp’, buat fungsi yang menggunakan accessor dan mutator untuk mengakses dan mengatur attributes ‘nomor_hp’.
+Simpan class tersebut dengan nama karyawan.py
+Buat class ‘Karyawati’ yang memiliki class attributes 'nama_kantor' dan instance attributes 'nama'
+(public),  'umur' (protected) dan ‘nomor_hp’ (private)
+Dalam class ‘Karyawati’ memiliki method ‘nomor_hp’, buat fungsi yang menggunakan accessor dan mutator untuk mengakses dan mengatur attributes ‘nomor_hp’.
+Simpan class tersebut dengan nama karyawati.py
+Buat file main.py yang mengimport class ‘Karyawan’ dan ‘Karyawati’
+Di dalam main.py, create 2 objek yang berasal dari class ‘Karyawan’ dan ‘Karyawati’ dan isi parameter dan
+set ‘nomor_hp’.
+Print nama dan ‘nomor_hp’ dari kedua objek yang telah dibuat tadi
