@@ -1,0 +1,2 @@
+Dalam collection sample_training.zips tambahkan field boolean "capital" untuk semua dokumen yang berkaitan dengan ALBANY, dan NEW YORK.
+Untuk semua dokumen ALBANY, Value dari tiap Field harus true dan untuk semua dokumen NEW YORK, Value dari tiap Field harus false
