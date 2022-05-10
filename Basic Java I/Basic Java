@@ -1,0 +1,10 @@
+STUDY CASE
+Buat aplikasi java yang menghitung nilai berdasarkan input dari argumen. Alur perhitungannya adalah: argumen pertama dikali argumen kedua dikali argumen ketiga dan berlaku kelipatan selanjutnya. Kemudian print type bilangan (ganjil atau genap) seperti contoh di output. Buat class java dengan nama StudyCase.
+
+contoh command input:
+java StudyCase 2 4
+java StudyCase 1 3 5
+
+output:
+8 - Genap
+15 - Ganjil
