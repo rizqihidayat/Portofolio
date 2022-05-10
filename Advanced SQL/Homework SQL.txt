@@ -1,0 +1,58 @@
+1. please write a query that show the total of each product category name
+
+select 
+	product_category_name 
+	, count(product_id)
+from 
+	olist_products_dataset_csv oodc 
+group by 1
+
+2. please write a query that show the total of credit card payment type
+
+select 
+	payment_type 
+	, count(order_id)
+from 
+	olist_order_payments_dataset_csv oodc 
+where 
+	1=1
+	and payment_type = 'credit_card'
+group by 1
+
+3. please write a query that show top 3 payment type with the most order item dataset
+
+select
+	payment_type
+	, count(a.order_id)
+from (
+	select
+		oodc.order_id
+		, payment_type
+	from
+		olist_order_items_dataset_csv oodc
+	join
+		olist_order_payments_dataset_csv oopdc
+	on
+		oodc.order_id = oopdc.order_id
+) a
+group by 1
+order by count desc
+limit 3
+
+
+4. please write a query that show the sum of payment value from each payment type which istallments is greater than 1
+
+select
+	payment_type
+	, sum(payment_value)
+from (
+	select
+		payment_type
+		, payment_value 
+		, payment_installments
+	from
+		olist_order_payments_dataset_csv oopdc
+	where 
+		payment_installments > 1
+) a
+group by 1
