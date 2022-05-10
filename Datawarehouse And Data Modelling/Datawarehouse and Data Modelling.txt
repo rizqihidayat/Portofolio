@@ -1,0 +1,44 @@
+Pada Instances MySQL DigitalSkola, ada database hr_db. Temukan beberapa hal berikut menggunakan query join.
+1. Write a query to find first name, last name, phone number, department name, hire date, salary, min salary and max salary. You can explore from table employees, departments and jobs.
+
+SELECT 
+	employees.LAST_NAME
+	, employees.FIRST_NAME
+	, employees.PHONE_NUMBER 
+	, departments.DEPARTMENT_NAME
+	, employees.HIRE_DATE 
+	, employees.SALARY
+	, jobs.MIN_SALARY 
+	, jobs.MAX_SALARY 
+FROM
+	employees 
+INNER JOIN departments on employees.DEPARTMENT_ID  = departments.DEPARTMENT_ID  
+INNER JOIN jobs on employees.JOB_ID = jobs.JOB_ID;
+
+2. Write a query to find the first name, last name, phone number, department name, hire date, salary and city of the employees and have a salary more than 12000. You can explore from table employees, departments and locations.
+
+SELECT 
+	employees.LAST_NAME
+	, employees.FIRST_NAME
+	, employees.PHONE_NUMBER 
+	, departments.DEPARTMENT_NAME
+	, employees.HIRE_DATE 
+	, employees.SALARY
+	, locations.CITY   
+FROM
+	departments
+INNER JOIN employees on employees.DEPARTMENT_ID  = departments.DEPARTMENT_ID  
+INNER JOIN locations on departments.LOCATION_ID = locations.LOCATION_ID
+WHERE
+	SALARY  > 12000;
+
+3. Write a query to find the employee id, name (last_name) along with their manager_id and name (last_name). You can explore from table employees.
+
+SELECT 
+	e.employee_id 'Employee_Id'
+	, e.last_name 'Employee'
+	, m.employee_id 'Manager_Id'
+	, m.last_name 'Manager' 
+FROM employees e
+join employees m 
+ON (e.manager_id = m.employee_id);
