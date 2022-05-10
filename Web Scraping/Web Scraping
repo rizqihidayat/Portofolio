@@ -1,0 +1,3 @@
+●     Please create a scraping script that giving the result of csv file with the product and price name
+
+notes : you could choose your own method and website, but if not please use this : https://shopee.co.id/api/v4/search/search_items?by=relevancy&limit=60&match_id=1028154&newest=0&order=desc&page_type=collection&scenario=PAGE_COLLECTION_SEARCH&version=2 using urllib library in python
