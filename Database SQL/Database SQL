@@ -1,0 +1,5 @@
+●     Please create SQL for these queries:
+a.   Show last name of persons whose salary is above 3 million
+b.   Show last name of persons whose gender is ‘P’ and salary below 4 million
+c.   Show the phone number of persons whose first name contain ‘a’
+d.   Show first name, last name, phone number and salary of persons whose last name contain ‘e’
