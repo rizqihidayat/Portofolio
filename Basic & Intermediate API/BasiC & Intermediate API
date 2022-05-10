@@ -1,0 +1,6 @@
+Mohon download data dari
+a. https://www.kaggle.com/olistbr/brazilian-ecommerce
+olist_order_items_dataset_csv (10 ribu pertama)
+b. Buatlah sebuah script yang bertujuan untuk memasukkan data csv ke dalam database
+c. Buatlah sebuah script yang bertujuan untuk membaca data dari database
+d. Buatlah sebuah python script yang digunakan untuk menjalankan aplikasi berbasis flask berikut jg dengan responnya
