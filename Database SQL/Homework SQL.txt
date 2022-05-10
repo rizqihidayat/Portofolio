@@ -1,0 +1,28 @@
+CREATE TABLE persons (
+person_id serial not null,
+last_name varchar(255),
+first_name varchar(255),
+phone_number varchar (100),
+created_at timestamp,
+salary int,
+gender text,
+constraint person_id primary key (person_id)); 
+
+INSERT INTO persons(last_name, first_name,phone_number, created_at, salary, gender)
+VALUES ('Afta', 'Beta','+62123456', NOW(), 3500000, 'P');
+
+INSERT INTO persons(last_name, first_name,phone_number, created_at, salary, gender)
+values ('Charlie', 'Delta','+6265655456', NOW(), 1000000, 'L'),
+		('Elf', 'Fiko','+625656566', NOW(), 2000000, 'L'),
+		('Jeje', 'Kiku','+62111156', NOW(), 3500000, 'P'),
+		('Lea', 'Mia','+6261155456', NOW(), 4000000, 'P'),
+		('Nano', 'Olaf','+622222566', NOW(), 3200000, 'L');
+
+a. Show last name of persons whose salary is above 3 million
+   SELECT last_name FROM persons WHERE salary > 3500000;
+b. Show last name of persons whose gender is ‘P’ and salary below 4 million
+   SELECT last_name FROM persons WHERE gender  like 'P' and salary < 4000000;
+c. Show the phone number of persons whose first name contain ‘a’
+   SELECT phone_number FROM persons WHERE last_name  like '%A%';
+d. Show first name, last name, phone number and salary of persons whose last name contain ‘e’
+   SELECT first_name , last_name , phone_number , salary  FROM persons WHERE last_name like '%e%'; 
