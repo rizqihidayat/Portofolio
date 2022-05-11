@@ -1,0 +1,8 @@
+Essay
+Kita memiliki data customer orders yang terdiri dari customer, item dan order amount,
+terdapat dalam file customer-orders.csv
+Problem : Kita perlu mengetahui berapa banyak item yang beli oleh setiap customer.
+Jika bisa, total item sudah di sortir, bisa menggunakan multi stage seperti yang telah
+diajarkan sebelumnya.
+Silahkan buat MapReduce Job menggunakan python package mrjob, simpan dalam
+bentuk pdf atau attach link google collab kalian.
