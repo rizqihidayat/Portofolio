@@ -1,0 +1,8 @@
+Buatlah script python mrjob menggunakan source data covid19_2020.csv untuk menghitung total kasus
+covid19 per negara di tahun 2020.
+
+Country_name Total_kasus
+
+Sertakan ke dalam attachment classroom berupa:
+- Script Python
+- Hasil csv
