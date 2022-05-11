@@ -1,0 +1,11 @@
+● Buat program menggunakan SparkSQL untuk mencari berapa Amount minimum
+  yang dikeluarkan untuk setiap CustomerID.
+● Tentukan Schema dari DataFrame menggunakan StructType seperti pada
+  contoh code min-temprature-dataframe.py
+● Column pada dataset retail-data-full.csv antara lain: InvoiceNo, StockCode,
+  Description, Quantity, InvoiceData, Amount, CustomerID, Country
+● File menggunakan separated “;”
+● Simpan pada variable results, kemudian print
+● Silahkan gunakan code program min-temprature-dataframe.py pada pertemuan
+  sebelumnya sebagai referensi untuk menyelesaikan tugas ini.
+● Kumpulkan tugas dalam bentuk pdf atau attach link google collab
