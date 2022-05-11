@@ -1,0 +1,31 @@
+Essay
+
+Parent Class
+● Buat class Academician dengan field “name” dan “age”.
+● Dalam class Academician, ada constructor Academician dengan
+parameter name dan age.
+● Dalam Constructor ini, parameter name akan mengakses field
+“name” menggunakan keyword “this”, begitupun dengan parameter
+“age”
+● Masih dalam class Academician, buat method studentSubject dengan
+parameter subject. Dalam method studentSubject, Print “name”,
+“age” dan “subject”
+
+Child Class
+● Buat class Student yang mewariskan class Academician dan memiliki
+field grade.
+● Dalam class Student, ada constructor Student dengan parameter
+“name” dan “age”. Parameter ini akan mengakses field dari parent
+class Academician, silahkan gunakan keyword super.
+● Buat method studentSubject dengan parameter subject. Dalam
+method studentSubject, Print “name”, “age” dan “subject”. Lakukan
+overriding method studentSubject dengan menambahkan kalimat “ I
+am a Student” ketika memanggil print
+
+Main Class
+● Buat class StudentApp yang berisi method main
+● Dalam method main, buat object student yang meng-instansiasi class
+Student. Tentukan parameter constructor “name” dengan nama
+teman2
+● Panggil method studentSubject dan isi parameter dengan
+“Matematika”
