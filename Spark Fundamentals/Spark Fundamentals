@@ -1,0 +1,8 @@
+● Buat program menggunakan pyspark untuk mencari rata-rata berapa banyak amount
+  yang dikeluarkan untuk setiap CustomerID.
+● Column pada dataset retail-data.csv antara lain:
+  InvoiceNo,Description,Amount,CustomerID
+● File menggunakan separated “;”
+● Silahkan gunakan code program friend-by-age.py pada pertemuan sebelumnya sebagai
+  referensi untuk menyelesaikan tugas ini.
+● Silahkan kumpulkan tugas dalam bentuk pdf atau attach link google collab
