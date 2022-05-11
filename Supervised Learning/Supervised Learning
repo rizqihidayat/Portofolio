@@ -1,0 +1,8 @@
+Essay:
+• Buatlah sebuah python script sederhana yang menggunakan
+  supervised learning algorithm yang menghasilkan sebuah model
+  untuk mendeteksi harga dari sebuah used cars berdasarkan feature
+  mobil tersebut dari data dibawah ini :
+
+https://www.kaggle.com/datasets/nehalbirla/vehicle-dataset-
+from-cardekho
