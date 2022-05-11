@@ -1,0 +1,14 @@
+create table yearly_supplier_net_revenue_rizqi as 
+select 
+	s.supplier_id as Supplier_id, 
+	s.contact_name as Supplier_name,
+	year(o.order_date) as year,
+	od.quantity * (od.unit_price - od.discount) as Net_revenue
+
+from suppliers s
+join products p 
+on s.supplier_id = p.supplier_id 
+join order_details od 
+on p.product_id = od.product_id 
+join orders o 
+on od.order_id = o.order_id
